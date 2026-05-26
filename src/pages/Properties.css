@@ -1,0 +1,40 @@
+.properties-page .page-header {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+.min-h-50vh {
+  min-height: 50vh;
+}
+
+.placeholder-message-box {
+  background-color: white;
+  padding: 4rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.placeholder-message-box h2 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.placeholder-message-box p {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.mt-8 {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-prompt {
+  font-weight: 500;
+  color: var(--color-primary) !important;
+  margin-bottom: 1.5rem !important;
+}

@@ -1,0 +1,147 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.5rem 0;
+  transition: all 0.4s ease;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Sólido al hacer scroll en cualquier página */
+.navigation.scrolled {
+  background-color: #2D4A3E;
+  padding: 1rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Sólido siempre en páginas que no son home */
+body.not-home .navigation {
+  background-color: #2D4A3E;
+  padding: 1rem 0;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-link { 
+  display: flex; 
+  align-items: center; 
+}
+
+.nav-logo-img { 
+  height: 52px; 
+  width: auto; 
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.desktop-nav a {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.90);
+  position: relative;
+  transition: color 0.3s ease;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.navigation.scrolled .desktop-nav a,
+body.not-home .navigation .desktop-nav a {
+  text-shadow: none;
+  color: rgba(255,255,255,0.85);
+}
+
+.desktop-nav a:hover,
+.desktop-nav a.active {
+  color: var(--color-accent);
+}
+
+.desktop-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.desktop-nav a:hover::after,
+.desktop-nav a.active::after {
+  width: 100%;
+}
+
+.mobile-menu-btn {
+  display: flex;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.navigation.scrolled .mobile-menu-btn,
+body.not-home .navigation .mobile-menu-btn {
+  text-shadow: none;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-primary);
+  z-index: 999;
+  transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav.open {
+  right: 0;
+}
+
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile-nav-container a {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-container a:hover,
+.mobile-nav-container a.active {
+  color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+  }
+}
