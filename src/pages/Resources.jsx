@@ -17,7 +17,13 @@ const Resources = () => {
           <div className="articles-grid">
             {/* Article 1 */}
             <article className="article-card">
-              <div className="article-image placeholder"></div>
+              <Link to="/resources/how-foreigners-buy-property-el-salvador" className="article-image-link">
+                <img
+                  src="/images/article1-hero.jpg"
+                  alt="How foreigners buy property in El Salvador"
+                  className="article-image"
+                />
+              </Link>
               <div className="article-content">
                 <span className="accent-label">Guide</span>
                 <h3>How Foreigners Buy Property in El Salvador: The Complete Process</h3>
@@ -27,7 +33,13 @@ const Resources = () => {
 
             {/* Article 2 */}
             <article className="article-card">
-              <div className="article-image placeholder"></div>
+              <Link to="/resources/no-property-taxes-el-salvador" className="article-image-link">
+                <img
+                  src="/images/article2-hero.jpg"
+                  alt="No property taxes in El Salvador"
+                  className="article-image"
+                />
+              </Link>
               <div className="article-content">
                 <span className="accent-label">Tax Strategy</span>
                 <h3>No Property Taxes: Why El Salvador Is Rewriting the Rules</h3>
@@ -37,7 +49,13 @@ const Resources = () => {
 
             {/* Article 3 */}
             <article className="article-card">
-              <div className="article-image placeholder"></div>
+              <Link to="/resources/why-hnw-buyers-el-salvador-2026" className="article-image-link">
+                <img
+                  src="/images/article3-hero.jpg"
+                  alt="Why high-net-worth individuals are buying in El Salvador in 2026"
+                  className="article-image"
+                />
+              </Link>
               <div className="article-content">
                 <span className="accent-label">Market Comparison</span>
                 <h3>Why High-Net-Worth Individuals Are Quietly Buying in El Salvador in 2026</h3>
