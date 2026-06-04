@@ -145,8 +145,8 @@ const Home = () => {
       <section className="section about-kevin bg-white">
         <div className="container">
           <div className="about-grid">
-            <div className="about-image-placeholder">
-              <div className="placeholder-text">Professional Photo Placeholder</div>
+            <div className="about-image">
+              <img src="/images/kevin-ramos.jpg" alt="Kevin Ramos, founder of Volcana Pacifica" />
             </div>
             <div className="about-content">
               <span className="accent-label">Your Advisor</span>
@@ -160,6 +160,14 @@ const Home = () => {
                 With deep local knowledge and a bilingual approach, Kevin guides every client from 
                 first inquiry to final title, ensuring a seamless and secure transition into your 
                 new tropical lifestyle.
+              </p>
+              <p>
+                Kevin also works professionally as an Anti-Money Laundering (AML) analyst in the 
+                fintech sector. This background gives Volcana Pacifica's clients a rare advantage: 
+                a clear, well-documented approach to the source and legitimacy of funds — including 
+                purchases made in Bitcoin, which is legal tender in El Salvador. For international 
+                buyers, that added layer of transparency and security is often what makes a 
+                cross-border purchase feel safe.
               </p>
               <a href="/about" className="link-arrow">Read full story &rarr;</a>
             </div>
